@@ -43,25 +43,30 @@
     right: -20px;
     transform: translate(-50%, -50%);
     color: var(--blue-color);
+    
   }
   .next2{
     top: 44%;
     right: -20px;
     transform: translate(-50%, -50%);
-    color: var(--blue-color);      
+    color: var(--blue-color);    
+
    }
   .next3{
     top: 50%;
     right: -20px;
     transform: translate(-50%, -50%);
     color: var(--blue-color);
+
   }
   .next4{
     top: 43%;
     right: -20px;
     transform: translate(-50%, -50%);
     color: var(--blue-color);
+
   }
+  
   #wrapper {
     width: 100%;
     max-width: 964px;
@@ -89,6 +94,7 @@
     outline: 0;
     cursor: pointer;
     position: absolute;
+    display: none;
   }
   
   #content {
