@@ -25,19 +25,43 @@
   html{
       background-color: var(--black-color);
   }
-  p, h1{
-      color: var(--text-color);
+  .pp{
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--text-color);
+    margin: var(--mb-3)
   }
-  .figuresection{
-   
+  .hh1{
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--text-color);
+    margin: var(--mb-3);
+  }
+  .ideas img{
+    display: none;
+
   }
   .figure{
-      margin-left: var(--mb-1);
+      margin-left: var(--mb-3);
+      width: 140px;
   }
-  .figure1{
-    margin-left: var(--mb-1);
-    height: 136px;
+  
+  .next1, .next2, .next3, .next4 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: none;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+    display: none;
   }
+  
   .next1{
     top: 44%;
     right: -20px;
@@ -67,10 +91,11 @@
 
   }
   
-  #wrapper {
+  .wrap {
     width: 100%;
     max-width: 964px;
     position: relative;
+    display: flex;
   }
   
   #carousel {
@@ -83,21 +108,8 @@
     height: 0;
   }
   
-  #next {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background: none;
-    border: none;
-    padding: 8px;
-    border-radius: 50%;
-    outline: 0;
-    cursor: pointer;
-    position: absolute;
-    display: none;
-  }
-  
-  #content {
+ 
+  .content1 {
     display: grid;
     grid-gap: 20px;
     grid-auto-flow: column;
@@ -112,4 +124,41 @@
     background: var(--text-color);
     border-radius: 20px;
   }
+
+
+  /* === Media Querys ===*/
+
+  /* === Landscape mode small devices 576+ === */
+
+  /* === PORTFOLIO QUERYS ===*/
+
+  @media only screen and (min-width: 576px){
+    .hh1{
+      margin: var(--mb-4);
+    }
+    .pp{
+      margin: var(--mb-4);
+    }
+    .figure{
+      width: 160px;
+    }
+    .item{
+      width: 160px;
+      height: 160px;
+    }
+
+  }
+
+  /* === Medium devices 768+ === */
+  @media only screen and (min-width: 768px){
   
+  }
+
+  /* === Large devices 992+ === */
+  @media only screen and (min-width: 992px){
+
+  }
+  /* === Extra large devices 1200+ === */
+  @media only screen and (min-width: 1200px){
+
+  }
