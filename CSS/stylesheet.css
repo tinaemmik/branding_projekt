@@ -2,3 +2,108 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    /*===== Colors =====*/
+    --black-color: #272727;
+    --grey-color: #3B3B3B;
+    --blue-color: #3E9CC1;
+    --dark-color: #000;
+    --text-color: #FFFFFF;
+  
+    /*===== Margenes =====*/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+  
+  }
+
+  /* === PORTFOLIO === */
+  
+  html{
+      background-color: var(--black-color);
+  }
+  p, h1{
+      color: var(--text-color);
+  }
+  .figuresection{
+   
+  }
+  .figure{
+      margin-left: var(--mb-1);
+  }
+  .figure1{
+    margin-left: var(--mb-1);
+    height: 136px;
+  }
+  .next1{
+    top: 44%;
+    right: -20px;
+    transform: translate(-50%, -50%);
+    color: var(--blue-color);
+  }
+  .next2{
+    top: 44%;
+    right: -20px;
+    transform: translate(-50%, -50%);
+    color: var(--blue-color);      
+   }
+  .next3{
+    top: 50%;
+    right: -20px;
+    transform: translate(-50%, -50%);
+    color: var(--blue-color);
+  }
+  .next4{
+    top: 43%;
+    right: -20px;
+    transform: translate(-50%, -50%);
+    color: var(--blue-color);
+  }
+  #wrapper {
+    width: 100%;
+    max-width: 964px;
+    position: relative;
+  }
+  
+  #carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  
+  #carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  
+  #next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: none;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  #content {
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+    margin: var(--mb-2);
+  }
+  
+  .item {
+    width: 140px;
+    height: 140px;
+    background: var(--text-color);
+    border-radius: 20px;
+  }
+  
