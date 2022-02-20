@@ -50,7 +50,6 @@
 
   }
   .figure{
-      margin-left: var(--mb-3);
       width: 145px;
   }
   
@@ -126,6 +125,7 @@
     height: 140px;
     background: var(--text-color);
     border-radius: 20px;
+    align-self: center;
   }
 
 
@@ -166,14 +166,27 @@
       font-size: 23px;
     }
     .ideas img{
-        max-width: 50%;
+        max-width: 60%;
         display: flex;
         justify-content: center;
         align-self: center;
         margin-left: auto;
         margin-right: auto;      
     }
+    .reverse img:nth-of-type(2){
+      order: -1;
+    }
+    .reverse2 img:nth-of-type(1){
+      order: 1;
+    }
+    .reverse2 img:nth-of-type(2){
+      order: 1;
+    }
+    .reverse3 img:nth-of-type(1){
+      order: 1;
+    }
   }
+    
 
   /* === Large devices 992+ === */
   @media only screen and (min-width: 992px){
