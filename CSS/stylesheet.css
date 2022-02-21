@@ -55,7 +55,7 @@ footer h2{
   padding: 10px;
   text-align: center;
 }
-section{
+.footer_design{
   background-color: #585757;
   display: flex;
   flex-direction: column;
