@@ -120,7 +120,59 @@ footer h2{
   width: 100%;
   border-bottom: 8px solid #3E9CC1;
 }
+.om_os{
+  color: #FFFFFF;
+  font-family: futura-pt-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+}
+.beskrivelse_omos div img{
+  max-width: 230px;
+}
 
+label img{
+  width: 100%;
+  height: 197px;
+}
+
+.beskrivelse_omos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.beskrivelse_omos label {
+  order: initial;
+  display: block; 
+  background: #3B3B3B;
+  margin: 20px;
+  padding: 30px;
+
+}
+
+.beskrivelse_omos .beskrivelse_omos2 {
+  order: initial;
+  display: none;
+  padding: 20px;
+  background: #3B3B3B;
+  color: white;
+  width: 100%;
+}
+
+.beskrivelse_omos input {
+display: none;
+}
+
+.beskrivelse_omos input:checked + label {
+background: #3E9CC1;
+}
+
+.beskrivelse_omos input:checked + label + .beskrivelse_omos2 {
+display: block;
+}
 
   /* === PORTFOLIO === */
   
@@ -366,5 +418,17 @@ footer h2{
   }
   .info_kontaktos li{
     font-size: 25px;
+  }
+  /*om os*/
+  .om_os{
+    font-size: 30px;
+    margin: 20px;
+  }
+  .beskrivelse_omos label {
+    order: 1;
+  
+  }
+  .beskrivelse_omos .beskrivelse_omos2 {
+    order: 99; 
   }
   }
