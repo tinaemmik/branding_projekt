@@ -273,15 +273,70 @@ display: block;
     box-sizing: border-box;
     margin: var(--mb-2);
   }
-  
-  .item {
+    .container {
+    padding: 80px 0;
+  }
+  .content {
+    position: relative;
+  }
+  .item, .item1, .item2,
+  .item3, .item4, .item5,
+  .item6, .item7, .item8, 
+  .item9, .item10, .item11,  
+  .item12 {
     width: 140px;
     height: 140px;
     background: var(--text-color);
     border-radius: 20px;
     align-self: center;
   }
-
+  .item, .item1, .item2,
+  .item3, .item4, .item5,
+  .item6, .item7, .item8, 
+  .item9, .item10, .item11,  
+  .item12 {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #b3b3b3;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  .item img .item img, .item1 img, .item2 img,
+  .item3 img, .item4 img, .item5 img,
+  .item6 img, .item7 img, .item8 img, 
+  .item9 img, .item10 img, .item11 img,  
+  .item12 img  {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    margin:0;
+    padding:0;
+    -webkit-transition: top 11s;
+    -moz-transition: top 11s;
+    -ms-transition: top 11s;
+    -o-transition: top 11s;
+    transition: bottom 11s;
+  }
+  .item:hover img, .item1:hover img, .item2:hover img,
+  .item3:hover img, .item4:hover img, .item5:hover img,
+  .item6:hover img, .item7:hover img, .item8:hover img, 
+  .item9:hover img, .item10:hover img, .item11:hover img,  
+  .item12:hover img  {
+    bottom: 0;
+    -webkit-transition: all 11s;
+    -moz-transition: all 11s;
+    -ms-transition: all 11s;
+    -o-transition: all 11s;
+    transition: all 11s;
+  }
+  .item2 img{
+    bottom: -458px;
+  }
+  .item1 img, .item4 img, .item9 img{
+    bottom: -460px;
+  }
 
   /* === Media Querys ===*/
 
@@ -293,9 +348,16 @@ display: block;
     .figure{
       width: 160px;
     }
-    .item{
+  .item1, .item2,
+  .item3, .item4, .item5,
+  .item6, .item7, .item8, 
+  .item9, .item10, .item11,  
+  .item12 {
       width: 160px;
       height: 160px;
+    }
+    .item1 img, .item2 img, .item4 img, .item9 img{
+      bottom: -525px;
     }
     .content1{
       grid-gap: 30px;
@@ -327,19 +389,24 @@ display: block;
         margin-left: auto;
         margin-right: auto;      
     }
-    .reverse img:nth-of-type(2){
+    .reverse div:nth-of-type(2){
       order: -1;
     }
-    .reverse2 img:nth-of-type(1){
-      order: 1;
+    .reverse2 div:nth-of-type(1){
+      order: -1;
     }
-    .reverse2 img:nth-of-type(2){
-      order: 1;
+    .reverse2 div:nth-of-type(2){
+      order: -1;
     }
     .reverse3 img:nth-of-type(1){
       order: 1;
     }
-   /*header*/
+    .pp{
+      font-size: 17px;
+    }
+  
+   /* === HEADER === */
+
     header nav{
         height: 131px;
     }
@@ -359,9 +426,16 @@ display: block;
   @media only screen and (min-width: 992px){
     
     /* === PORTFOLIO === */
-    .item{
+  .item1, .item2,
+  .item3, .item4, .item5,
+  .item6, .item7, .item8, 
+  .item9, .item10, .item11,  
+  .item12 {
       width: 200px;
       height: 200px;
+    }
+    .item1 img, .item2 img, .item4 img, .item9 img{
+      bottom: -658px;
     }
     .figure{
       width: 200px;
@@ -369,11 +443,27 @@ display: block;
     .content1{
       grid-gap: 40px;
     }
+    .hh1{
+      margin: var(--mb-6);
+    }
+    .pp{
+      margin: var(--mb-6);
+    }
 
   }
   /* === Extra large devices 1200+ === */
   @media only screen and (min-width: 1200px){
-  /*footer*/
+  
+  /* === Portfolio === */
+  .hh1{
+    font-size: 30px;
+    margin: var(--mb-6);
+  }
+  .pp{
+    font-size: 25px;
+  }
+
+  /* === FOOTER ===*/
   .footer_design{
     display: flex;
     flex-flow: row wrap;
