@@ -79,6 +79,7 @@ section{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 .sociale_medier{
   text-align: center;
@@ -119,6 +120,7 @@ section{
   width: 100%;
   border-bottom: 8px solid #3E9CC1;
 }
+
 
   /* === PORTFOLIO === */
   
