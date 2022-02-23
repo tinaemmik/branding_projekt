@@ -27,12 +27,12 @@ header ul{
 }
 header a{
   text-decoration: none;
-  padding: 30px;
+  padding: 10px;
   color: white;
   font-family: futura-pt-condensed, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 30px;
+  font-size: 20px;
 }
 header a:hover{
   color: #3E9CC1;
@@ -185,7 +185,7 @@ display: block;
     font-style: normal;
     color: var(--text-color);
     margin: var(--mb-3);
-    margin-bottom: var(--mb-6);
+   
   }
   .hh1{
     font-family: futura-pt-bold, sans-serif;
@@ -195,16 +195,21 @@ display: block;
     color: var(--text-color);
     margin: var(--mb-3);
   }
+  .ideas{
+    margin-top: var(--mb-6);
+  }
   .ideas div{
     margin-right: auto;
     margin-left: auto;
   }
   .ideas img{
     display: none;
-
+  }
+  .figuresection{
+    margin-top: var(--mb-6);
   }
   .figure{
-      width: 145px;
+      width: 120px;
   }
   
   .next1, .next2, .next3, .next4 {
@@ -254,13 +259,16 @@ display: block;
     display: flex;
   }
   
-  #carousel {
+  #carousel1,  #carousel2,  #carousel3, #carousel4 {
     overflow: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
   }
   
-  #carousel::-webkit-scrollbar {
+  #carousel1::-webkit-scrollbar, 
+  #carousel2::-webkit-scrollbar, 
+  #carousel3::-webkit-scrollbar, 
+  #carousel4::-webkit-scrollbar {
     height: 0;
   }
   
@@ -289,12 +297,6 @@ display: block;
     background: var(--text-color);
     border-radius: 20px;
     align-self: center;
-  }
-  .item, .item1, .item2,
-  .item3, .item4, .item5,
-  .item6, .item7, .item8, 
-  .item9, .item10, .item11,  
-  .item12 {
     display: block;
     overflow: hidden;
     position: relative;
@@ -302,6 +304,7 @@ display: block;
     border-radius: 20px;
     margin: 0 auto;
   }
+ 
   .item img .item img, .item1 img, .item2 img,
   .item3 img, .item4 img, .item5 img,
   .item6 img, .item7 img, .item8 img, 
@@ -346,7 +349,7 @@ display: block;
 
   @media only screen and (min-width: 576px){
     .figure{
-      width: 160px;
+      width: 140px;
     }
   .item1, .item2,
   .item3, .item4, .item5,
@@ -357,13 +360,14 @@ display: block;
       height: 160px;
     }
     .item1 img, .item2 img, .item4 img, .item9 img{
-      bottom: -525px;
+      bottom: -524px;
     }
     .content1{
       grid-gap: 30px;
     }
     .ideas{
       margin: var(--mb-2);
+      margin-top: var(--mb-6);
     }
 
   }
@@ -377,9 +381,28 @@ display: block;
     .ideas{
       display: grid;
       grid-template-columns: 1fr 1fr;
+
     }
     .hh1{
       font-size: 23px;
+      margin: var(--mb-5);
+    }
+    .pp{
+      font-size: 17px;
+      margin: var(--mb-5);
+    }
+    .item1, .item2, .item3, 
+    .item4, .item5, .item6,
+    .item7, .item8, .item9,
+    .item10, .item11, .item12 {
+      width: 170px;
+      height: 170px;
+    }
+    .item1 img, .item2 img, .item4 img, .item9 img{
+      bottom: -558px;
+    }
+    .figure{
+    width: 160px;
     }
     .ideas img{
         max-width: 60%;
@@ -401,10 +424,10 @@ display: block;
     .reverse3 img:nth-of-type(1){
       order: 1;
     }
-    .pp{
-      font-size: 17px;
+    .content1{
+      margin: var(--mb-3);
     }
-  
+   
    /* === HEADER === */
 
     header nav{
@@ -431,17 +454,18 @@ display: block;
   .item6, .item7, .item8, 
   .item9, .item10, .item11,  
   .item12 {
-      width: 200px;
-      height: 200px;
+      width: 220px;
+      height: 220px;
     }
     .item1 img, .item2 img, .item4 img, .item9 img{
-      bottom: -658px;
+      bottom: -728px;
     }
     .figure{
-      width: 200px;
+      width: 180px;
     }
     .content1{
       grid-gap: 40px;
+      margin: var(--mb-4);
     }
     .hh1{
       margin: var(--mb-6);
@@ -455,12 +479,30 @@ display: block;
   @media only screen and (min-width: 1200px){
   
   /* === Portfolio === */
+  .item1, .item2,
+  .item3, .item4, .item5,
+  .item6, .item7, .item8, 
+  .item9, .item10, .item11,  
+  .item12 {
+      width: 260px;
+      height: 260px;
+    }
+    .item1 img, .item2 img, .item4 img, .item9 img{
+      bottom: -858px;
+    }
   .hh1{
     font-size: 30px;
     margin: var(--mb-6);
   }
   .pp{
     font-size: 25px;
+  }
+  .figure{
+    width: 200px;
+  }
+  .content1{
+    grid-gap: 60px;
+    margin: var(--mb-5);
   }
 
   /* === FOOTER ===*/
