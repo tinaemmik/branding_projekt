@@ -338,6 +338,87 @@ display: block;
     bottom: -460px;
   }
 
+  /* === KONTAKT OS === */
+
+  .kontaktos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kontakt h2 {
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+    font-family: futura-pt-condensed, sans-serif;
+}
+
+/* KONTAKT OS DIV */
+
+.kontaktosdiv p {
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px 0 10px 0;
+    font-family: futura-pt-condensed, sans-serif;
+}
+
+.kontaktosdiv {
+    background-color: #3B3B3B;
+    padding: 40px;
+    margin: 10px 40px 40px 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    min-width: 320px;
+}
+
+.kontaktformulardiv {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 7px 50px 7px 50px;
+}
+
+/* KONTAKT OS FORMULAR */
+form {
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.kontaktformular {
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.textbox {
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    left: 10px;
+    margin-bottom: 10px;
+}
+
+.sendbutton {
+    background-color: #3E9CC1;
+    color: white;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin: auto;
+    border: none;
+    font-family: futura-pt-condensed, sans-serif;
+}
+
   /* === Media Querys ===*/
 
   /* === Landscape mode small devices 576+ === */
@@ -364,6 +445,24 @@ display: block;
     }
     .ideas{
       margin: var(--mb-2);
+    }
+       /* === KONTAKT OS SIDEN === */
+       .kontakt h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .kontaktos {
+        margin: auto;
+        width: auto;
+    }
+
+    .kontaktosdiv {
+        font-size: 30px;
+    }
+    
+    .sendbutton {
+        padding: 5px 0 5px 0;
     }
 
   }
@@ -419,6 +518,27 @@ display: block;
     .fa-bars{
       display: none;
     }
+        /* === KONTAKT OS SIDEN === */
+        .kontakt h2 {
+          text-align: center;
+          font-size: 50px;
+      }
+  
+      .kontaktos {
+          flex-direction: row;
+          margin: auto;
+          width: auto;
+          height: auto;
+      }
+  
+      .kontaktosdiv {
+          font-size: 30px;
+      }
+      
+      .sendbutton {
+          padding: 5px 0 5px 0;
+      }
+      
   }
     
 
@@ -449,6 +569,30 @@ display: block;
     .pp{
       margin: var(--mb-6);
     }
+/* === KONTAKT OS SIDEN === */
+    .kontakt h2 {
+      text-align: center;
+      font-size: 60px;
+  }
+
+  .kontaktos {
+      flex-direction: row;
+      margin: auto;
+      width: auto;
+      height: auto;
+  }
+
+  .kontaktosdiv {
+      font-size: 30px;
+  }
+
+  .kontakt {
+      margin: 0 120px 0 120px;
+  }
+  
+  .sendbutton {
+      padding: 5px 0 5px 0;
+  }
 
   }
   /* === Extra large devices 1200+ === */
@@ -521,4 +665,29 @@ display: block;
   .beskrivelse_omos .beskrivelse_omos2 {
     order: 99; 
   }
+   /* === KONTAKT OS SIDEN === */
+   .kontakt h2 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.kontaktos {
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+    margin: auto;
+    height: 330px;
+}
+
+.kontaktosdiv {
+    font-size: 30px;
+}
+
+.kontakt {
+    margin: 0 150px 0 150px;
+}
+
+.sendbutton {
+    padding: 5px 0 5px 0;
+}
   }
