@@ -321,11 +321,7 @@ display: block;
     z-index: 0;
     margin:0;
     padding:0;
-    -webkit-transition: top 11s;
-    -moz-transition: top 11s;
-    -ms-transition: top 11s;
-    -o-transition: top 11s;
-    transition: bottom 11s;
+ 
   }
   .item:hover img, .item1:hover img, .item2:hover img,
   .item3:hover img, .item4:hover img, .item5:hover img,
@@ -345,22 +341,55 @@ display: block;
   .item1 img, .item4 img, .item9 img{
     bottom: -460px;
   }
+  .overlay a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    background-color: rgb(168, 166, 166, 0.3);
+  }
+  .jump{
+    animation: jump 2.0s infinite;
+  }
+   .bx{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--blue-color);
+    font-size: 35px;
+    padding: 52px;
+      
+  }
+  .bx:hover{
+    animation: fade;
+    opacity: 0;
+  }
 
+  /* ===  KEYFRAMES === */
+  @keyframes jump {
+    0% { transform: translate(-50%, -50%) scale(1.25, 0.75); }
+    50% { transform: translate(-50%, -60%) scale(1, 1); }
+
+}
   /* === Media Querys ===*/
 
   /* === Landscape mode small devices 576+ === */
 
-  /* === PORTFOLIO QUERYS ===*/
+ 
 
   @media only screen and (min-width: 576px){
-    .figure{
+     /* === PORTFOLIO QUERYS ===*/
+     .figure{
       width: 140px;
     }
-  .item1, .item2,
-  .item3, .item4, .item5,
-  .item6, .item7, .item8, 
-  .item9, .item10, .item11,  
-  .item12 {
+    .item1, .item2,
+    .item3, .item4, .item5,
+    .item6, .item7, .item8, 
+    .item9, .item10, .item11,  
+    .item12 {
       width: 160px;
       height: 160px;
     }
@@ -374,7 +403,11 @@ display: block;
       margin: var(--mb-2);
       margin-top: var(--mb-6);
     }
-
+    .bx{
+      font-size: 35px;
+      padding: 61px;
+    }
+    
   }
 
   /* === Medium devices 768+ === */
@@ -432,7 +465,11 @@ display: block;
     .content1{
       margin: var(--mb-3);
     }
-   
+    .bx{
+      font-size: 40px;
+      padding: 87px;
+    }
+
    /* === HEADER === */
 
     header nav{
@@ -478,6 +515,10 @@ display: block;
     .pp{
       margin: var(--mb-6);
     }
+    .bx{
+      font-size: 45px;
+      padding: 88px;
+    }
 
   }
   /* === Extra large devices 1200+ === */
@@ -509,7 +550,10 @@ display: block;
     grid-gap: 60px;
     margin: var(--mb-5);
   }
-
+  .bx{
+    font-size: 50px;
+    padding: 104px;
+  }
   /* === FOOTER ===*/
   .footer_design{
     display: flex;
@@ -571,3 +615,30 @@ display: block;
     order: 99; 
   }
   }
+
+  @media only screen and (min-width: 1440px){
+    .item1, .item2, .item3, .item4, .item5, .item6, 
+    .item7, .item8, .item9, .item10, .item11, .item12 {
+      width: 280px;
+      height: 280px;
+  }
+  .figure{
+    width: 220px;
+  }
+  .bx{
+    padding: 114px;
+  }
+}
+@media only screen and (min-width: 1600px){
+  .item1, .item2, .item3, .item4, .item5, .item6, 
+    .item7, .item8, .item9, .item10, .item11, .item12 {
+      width: 300px;
+      height: 300px;
+  }
+  .figure{
+    width: 240px;
+  }
+  .bx{
+    padding: 123px;
+  }
+}
