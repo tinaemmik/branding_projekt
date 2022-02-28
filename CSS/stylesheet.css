@@ -86,6 +86,17 @@ footer h2{
   font-size: 18px;
 }
 
+/* === FORSIDE === */
+  video {  
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 /* === KONTAKT OS ===*/
 .kontakt_os{
   text-align: right;
@@ -292,6 +303,9 @@ display: block;
   .content {
     position: relative;
   }
+  .item1 img{
+    animation: glide 4s 2 normal ease-out;
+  }
   .item, .item1, .item2,
   .item3, .item4, .item5,
   .item6, .item7, .item8, 
@@ -372,8 +386,15 @@ display: block;
   @keyframes jump {
     0% { transform: translate(-50%, -50%) scale(1.25, 0.75); }
     50% { transform: translate(-50%, -60%) scale(1, 1); }
-
-}
+  }
+  @keyframes glide {
+      0% {
+          top:0px;
+      }
+      100% {
+          top: -400px;
+      }
+  }
   /* === Media Querys ===*/
 
   /* === Landscape mode small devices 576+ === */
