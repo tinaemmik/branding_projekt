@@ -115,6 +115,7 @@ video {
   letter-spacing: 1px;
   margin-top: var(--mb-6);
   margin-left: var(--mb-2);
+  margin-bottom: var(--mb-4);
 }
 .forside ul{
   display: grid;
@@ -380,8 +381,9 @@ display: block;
     position: relative;
   }
   .item1 img{
-    animation: glide 4s 2 normal ease-out;
+    animation: glide 15s 2 normal ease-out;
   }
+  
   .item, .item1, .item2,
   .item3, .item4, .item5,
   .item6, .item7, .item8, 
@@ -455,6 +457,9 @@ display: block;
   }
   .bx:hover{
     animation: fade;
+    -moz-animation: fade 1s; 
+    -webkit-animation: fade 1s; 
+    -o-animation: fade 1s;
     opacity: 0;
   }
 
@@ -556,6 +561,9 @@ display: block;
     .forside img{
       margin-top: 3rem;
       margin-bottom: 0;
+    }
+    .forside p{
+      margin-bottom: var(--mb-6);
     }
 
     /* === PORTFOLIO === */
@@ -679,15 +687,7 @@ display: block;
 
   }
 
-/* === RESPONSIVE FIX === */
-  @media screen and (min-width: 1090px) {
-    .forside p{
-      margin-top: var(--mb-2);
-    }
-    .forside li{
-      padding: 10px;
-    }
-  }
+
   /* === Extra large devices 1200+ === */
   @media only screen and (min-width: 1200px){
   /* === FORSIDE === */
@@ -818,6 +818,8 @@ display: block;
     color: white;
     letter-spacing: 1px;
     margin-left: 4rem;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
   }
   video {  
     width: 100vw;
@@ -849,7 +851,7 @@ display: block;
   .forside img{
     margin: auto;
     display: flex;
-    margin-top: var(--mb-4);
+    margin-bottom: var(--mb-2);
   }
 
   /* === PORTFOLIO === */
