@@ -189,7 +189,7 @@ display: block;
   }
   .pp{
     font-family: futura-pt, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     color: var(--text-color);
     margin: var(--mb-3);
