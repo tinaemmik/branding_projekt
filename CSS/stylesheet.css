@@ -310,6 +310,84 @@ background: #3E9CC1;
 display: block;
 }
 
+/* SERVICE */
+
+body {
+  background-color: #272727;
+}
+
+.baggrundsbillede {
+  border-top: solid 5px #3E9CC1;;
+  border-bottom: solid 5px #3E9CC1;
+  width: 100%;
+}
+
+.service h2 {
+  color: white;
+  font-family: futura-pt-condensed, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.service {
+  text-align: center;
+}
+
+.serviceflex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service .serviceholder {
+  margin: 10px 50px;
+  max-width: 75%;
+  max-height: 170px;
+  position: relative;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.service .servicetext {
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+  left: 40px;
+  top: 75%;
+  padding-top: 2.5%;
+  background-color: rgba(62, 156, 193, 0.6);
+  color: white;
+  font-size: 18px;
+  font-family: futura-pt-condensed, sans-serif;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.servicetext p {
+  opacity: 0;
+  transition: 1s;
+  margin-top: 30px;
+}
+
+.service .serviceholder:hover .servicetext {
+ top: 0;
+ right: 0;
+ left: 0;
+}
+
+.service .serviceholder:hover p {
+  opacity: 1;
+}
+
+.service img {
+  width: 100%;
+  border-radius: 10px;
+  height: 170px;
+}
+
+
   /* === PORTFOLIO === */
   
   html{
@@ -565,6 +643,10 @@ display: block;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    /* === KONTAKT OS SIDEN === */
+    .service .serviceholder {
+      max-width: 33%;
+  }
      /* === PORTFOLIO QUERYS ===*/
      .figure{
       width: 140px;
@@ -693,6 +775,12 @@ display: block;
     header a{
       font-size: 25px;
     }
+
+  /* === SERVICE SIDEN === */
+  .serviceflex {
+  margin-left: 40px;
+  margin-right: 40px;
+  }
     
     /* === PORTFOLIO === */
     .hh1{
@@ -781,7 +869,11 @@ display: block;
     font-size: 30px;
     text-align: center;
   }
-
+  /* === SERVICE SIDEN === */
+  .serviceflex {
+  margin-left: 120px;
+  margin-right: 120px;
+  }
   /* === KONTAKT OS ===*/
 
   .kontakt_os p{
