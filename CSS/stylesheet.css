@@ -143,9 +143,8 @@ video {
   flex-direction: column;
 }
 .forside img{
-  max-width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 8rem;
+  max-width: 80%;
+  margin: auto;
 }
 .forside h1{
   font-size: 25px;
@@ -154,9 +153,9 @@ video {
   font-style: normal;
   color: white;
   letter-spacing: 1px;
-  margin-top: var(--mb-6);
+  margin-top: var(--mb-3);
   margin-left: var(--mb-2);
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-3);
 }
 .forside ul{
   display: grid;
@@ -312,7 +311,7 @@ display: block;
 
 /* SERVICE */
 
-body {
+.servicebody {
   background-color: #272727;
 }
 
@@ -700,9 +699,7 @@ body {
       margin-top: 3rem;
       margin-bottom: 0;
     }
-    .forside h1{
-      margin-bottom: var(--mb-6);
-    }
+  
 
     /* === PORTFOLIO === */
    .figuresection{
@@ -770,7 +767,7 @@ body {
   @media only screen and (min-width: 992px){
     /* === FORSIDE === */
     .forside img{
-      margin-top: 1%;
+      margin-top: 0;
     }
     header a{
       font-size: 25px;
@@ -943,6 +940,11 @@ body {
   .item11 img {
     bottom: -995px;
   }
+  /* === SERVICE === */
+  .serviceflex{
+    margin-right: 130px;
+    margin-left: 130px;
+  }
 }
 @media only screen and (min-width: 1600px){
 
@@ -955,8 +957,6 @@ body {
     color: white;
     letter-spacing: 1px;
     margin-left: 4rem;
-    margin-top: 6rem;
-    margin-bottom: 4rem;
   }
   video {  
     width: 100vw;
@@ -989,6 +989,11 @@ body {
     margin: auto;
     display: flex;
     margin-bottom: var(--mb-2);
+  }
+  /* === SERVICE === */
+  .serviceflex{
+    margin-left: 210px;
+    margin-right: 210px;
   }
 
   /* === PORTFOLIO === */
