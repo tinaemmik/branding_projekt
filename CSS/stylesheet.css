@@ -332,6 +332,7 @@ display: block;
 
 .service {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .serviceflex {
@@ -384,6 +385,7 @@ display: block;
   width: 100%;
   border-radius: 10px;
   height: 170px;
+  max-width: 255px;
 }
 
 
@@ -774,10 +776,10 @@ display: block;
     }
 
   /* === SERVICE SIDEN === */
-  .serviceflex {
-  margin-left: 40px;
-  margin-right: 40px;
-  }
+    .serviceflex {
+    margin-left: 80px;
+    margin-right: 80px;
+    }
     
     /* === PORTFOLIO === */
     .hh1{
@@ -868,8 +870,8 @@ display: block;
   }
   /* === SERVICE SIDEN === */
   .serviceflex {
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left: 200px;
+  margin-right: 200px;
   }
   /* === KONTAKT OS ===*/
 
@@ -916,7 +918,6 @@ display: block;
   .beskrivelse_omos .beskrivelse_omos2 {
     order: 99; 
   }
-  }
 
   @media only screen and (min-width: 1440px){
     .forside li{
@@ -942,8 +943,8 @@ display: block;
   }
   /* === SERVICE === */
   .serviceflex{
-    margin-right: 130px;
-    margin-left: 130px;
+    margin-right: 210px;
+    margin-left: 210px;
   }
 }
 @media only screen and (min-width: 1600px){
@@ -992,8 +993,8 @@ display: block;
   }
   /* === SERVICE === */
   .serviceflex{
-    margin-left: 210px;
-    margin-right: 210px;
+    margin-left: 600px;
+    margin-right: 600px;
   }
 
   /* === PORTFOLIO === */
