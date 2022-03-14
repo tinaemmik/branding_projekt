@@ -332,6 +332,7 @@ display: block;
 
 .service {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .serviceflex {
@@ -384,6 +385,7 @@ display: block;
   width: 100%;
   border-radius: 10px;
   height: 170px;
+  max-width: 255px;
 }
 
 
@@ -563,7 +565,7 @@ display: block;
   .jump{
     animation: jump 2.0s infinite;
   }
-   .bx{
+   .bx-mouse{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -573,7 +575,7 @@ display: block;
     padding: 52px;
       
   }
-  .bx:hover{
+  .bx-mouse:hover {
     animation: fade;
     -moz-animation: fade 1s; 
     -webkit-animation: fade 1s; 
@@ -755,7 +757,7 @@ display: block;
     .content1{
       margin: var(--mb-3);
     }
-    .bx{
+    .bx-mouse{
       font-size: 40px;
       padding: 87px;
     }
@@ -774,10 +776,10 @@ display: block;
     }
 
   /* === SERVICE SIDEN === */
-  .serviceflex {
-  margin-left: 40px;
-  margin-right: 40px;
-  }
+    .serviceflex {
+    margin-left: 80px;
+    margin-right: 80px;
+    }
     
     /* === PORTFOLIO === */
     .hh1{
@@ -810,7 +812,7 @@ display: block;
     .pp{
       margin: var(--mb-6);
     }
-    .bx{
+    .bx-mouse{
       font-size: 45px;
       padding: 88px;
     }
@@ -821,7 +823,7 @@ display: block;
   /* === Extra large devices 1200+ === */
   @media only screen and (min-width: 1200px){
   /* === FORSIDE === */
-  .forside 
+
   /* === Portfolio === */
   .item1, .item2,
   .item3, .item4, .item5,
@@ -848,7 +850,7 @@ display: block;
     grid-gap: 60px;
     margin: var(--mb-5);
   }
-  .bx{
+  .bx-mouse{
     font-size: 50px;
     padding: 104px;
   }
@@ -868,8 +870,8 @@ display: block;
   }
   /* === SERVICE SIDEN === */
   .serviceflex {
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left: 200px;
+  margin-right: 200px;
   }
   /* === KONTAKT OS ===*/
 
@@ -916,7 +918,7 @@ display: block;
   .beskrivelse_omos .beskrivelse_omos2 {
     order: 99; 
   }
-  }
+}
 
   @media only screen and (min-width: 1440px){
     .forside li{
@@ -932,7 +934,7 @@ display: block;
   .figure{
     width: 240px;
   }
-  .bx{
+  .bx-mouse{
     padding: 114px;
   }
   .item1 img, .item2 img, .item3 img,
@@ -942,8 +944,8 @@ display: block;
   }
   /* === SERVICE === */
   .serviceflex{
-    margin-right: 130px;
-    margin-left: 130px;
+    margin-right: 210px;
+    margin-left: 210px;
   }
 }
 @media only screen and (min-width: 1600px){
@@ -992,8 +994,8 @@ display: block;
   }
   /* === SERVICE === */
   .serviceflex{
-    margin-left: 210px;
-    margin-right: 210px;
+    margin-left: 600px;
+    margin-right: 600px;
   }
 
   /* === PORTFOLIO === */
@@ -1005,10 +1007,12 @@ display: block;
   .figure{
     width: 280px;
   }
-  .bx{
+  .bx-mouse{
     padding: 123px;
   }
   .item1 img, .item2 img, .item3 img, .item4 img, .item6 img, .item9 img, .item10 img, .item11 img {
     bottom: -1130px;
 }
+
 }
+  
