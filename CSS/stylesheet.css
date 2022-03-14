@@ -141,6 +141,7 @@ video {
 .forside{
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
 }
 .forside img{
   max-width: 80%;
@@ -842,6 +843,7 @@ display: block;
   }
   .pp{
     font-size: 25px;
+    line-height: 1.5;
   }
   .figure{
     width: 200px;
