@@ -565,7 +565,7 @@ display: block;
   .jump{
     animation: jump 2.0s infinite;
   }
-   .bx-mouse, .bx{
+   .bx-mouse{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -575,7 +575,7 @@ display: block;
     padding: 52px;
       
   }
-  .bx-mouse:hover, .bx:hover{
+  .bx-mouse:hover {
     animation: fade;
     -moz-animation: fade 1s; 
     -webkit-animation: fade 1s; 
@@ -671,7 +671,7 @@ display: block;
       margin: var(--mb-2);
       margin-top: var(--mb-6);
     }
-    .bx-mouse{
+    .bx{
       font-size: 35px;
       padding: 61px;
     }
