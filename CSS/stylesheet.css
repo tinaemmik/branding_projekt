@@ -186,10 +186,10 @@ video {
   -o-animation: fadein 2s; /* Opera */
 }
 .forside img{
-  animation: fadein 5s;
- -moz-animation: fadein 5s; /* Firefox */
- -webkit-animation: fadein 5s; /* Safari and Chrome */
- -o-animation: fadein 5s; /* Opera */
+  animation: fadein 30s;
+ -moz-animation: fadein 30s; /* Firefox */
+ -webkit-animation: fadein 30s; /* Safari and Chrome */
+ -o-animation: fadein 30s; /* Opera */
 }
 .forside a:nth-of-type(1){  
  animation: fadein 5s;
@@ -246,8 +246,6 @@ animation: fadein 11s;
   margin-right: 60px;
   margin-bottom: 20px;
 }
-
-
 
 
 /* === KONTAKT OS === */
@@ -330,13 +328,6 @@ form {
   border: none;
   font-family: futura-pt-condensed, sans-serif;
 }
-
-
-
-
-
-
-
 
   /* === OM OS === */
 .banner_omos{
@@ -508,9 +499,9 @@ display: block;
     margin-left: auto;
   }
   .ideas img{
-    display: none;
+    display: none;  
   }
-
+  
   .figure{
       width: 120px;
   }
@@ -612,7 +603,7 @@ display: block;
     margin: 0 auto;
   }
  
-  .item img .item img, .item1 img, .item2 img,
+  .item img, .item1 img, .item2 img,
   .item3 img, .item4 img, .item5 img,
   .item6 img, .item7 img, .item8 img, 
   .item9 img, .item10 img, .item11 img,  
@@ -874,7 +865,8 @@ display: block;
         justify-content: center;
         align-self: center;
         margin-left: auto;
-        margin-right: auto;      
+        margin-right: auto;    
+     
     }
     .reverse div:nth-of-type(2){
       order: -1;
