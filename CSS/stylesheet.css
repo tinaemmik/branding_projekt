@@ -749,8 +749,6 @@ display: block;
         padding: 5px 0 5px 0;
     }
 
-  
-  }
      /* === PORTFOLIO QUERYS ===*/
      .figure{
       width: 140px;
@@ -778,8 +776,8 @@ display: block;
       font-size: 35px;
       padding: 61px;
     }
-    
   
+  }
 
   /* === Medium devices 768+ === */
   @media only screen and (min-width: 768px){
@@ -826,7 +824,6 @@ display: block;
     padding: 5px 0 5px 0;
 }
 
-}
 
     /* === PORTFOLIO === */
    .figuresection{
@@ -888,7 +885,7 @@ display: block;
       padding: 87px;
     }
 
-  
+  }
     
 
   /* === Large devices 992+ === */
