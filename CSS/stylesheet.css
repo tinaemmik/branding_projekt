@@ -138,6 +138,13 @@ video {
   left: 0;
   z-index: -1;
 }
+video::-webkit-media-controls-timeline {
+  display: none;
+}
+video::-webkit-media-controls-play-button {
+  display: none;
+}
+
 .forside{
   display: flex;
   flex-direction: column;
