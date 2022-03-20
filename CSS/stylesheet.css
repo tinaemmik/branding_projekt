@@ -40,7 +40,8 @@ header a{
   font-family: futura-pt-condensed, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 40px;
+  margin-right: var(--mb-2);
 }
 header a:hover{
   color: #3E9CC1;
@@ -793,7 +794,7 @@ display: block;
     }
     .logo{
       margin-left: var(--mb-3);
-      font-size: 40px;
+      font-size: 50px;
     }
    
     /* === FORSIDE === */
@@ -894,9 +895,15 @@ display: block;
     .forside img{
       margin-top: 0;
     }
-    header a{
-      font-size: 25px;
-    }
+   
+  /* === HEADER === */
+  .logo{
+    font-size: 60px;
+  }
+  header a{
+    font-size: 45px;
+    margin-right: var(--mb-4);
+  }
 
   /* === SERVICE SIDEN === */
     .serviceflex {
@@ -1094,10 +1101,6 @@ display: block;
 }
 
   @media only screen and (min-width: 1440px){
-    .forside li{
-      padding: 0;
-    }
-
     /* === PORTFOLIO === */
     .item1, .item2, .item3, .item4, .item5, .item6, 
     .item7, .item8, .item9, .item10, .item11, .item12 {
