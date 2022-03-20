@@ -629,11 +629,15 @@ display: block;
     -o-transition: all 11s;
     transition: all 11s;
   }
+ 
+  .item1 img, .item4 img, .item9 img{
+    bottom: -460px;
+  } 
   .item2 img{
     bottom: -458px;
   }
-  .item1 img, .item4 img, .item9 img{
-    bottom: -460px;
+  .item7 img, .item5 img{
+    bottom: -599px;
   }
   .overlay a{
     position: absolute;
@@ -750,7 +754,7 @@ display: block;
         padding: 5px 0 5px 0;
     }
 
-     /* === PORTFOLIO QUERYS ===*/
+     /* === PORTFOLIO ===*/
      .figure{
       width: 140px;
     }
@@ -765,6 +769,9 @@ display: block;
     .item1 img, .item2 img, .item3 img,
     .item4 img, .item6 img, .item9 img, .item10 img, .item11 img{
       bottom: -524px;
+    }
+    .item7 img, .item5 img{
+      bottom: -688px;
     }
     .content1{
       grid-gap: 30px;
@@ -851,8 +858,13 @@ display: block;
       width: 170px;
       height: 170px;
     }
-    .item1 img, .item2 img, .item3 img, .item4 img, .item6 img, .item9 img, .item10 img, .item11 img{
+    .item1 img, .item2 img, .item3 img,
+    .item4 img, .item6 img, .item9 img, 
+    .item10 img, .item11 img{
       bottom: -558px;
+    }
+    .item7 img , .item5 img{
+      bottom: -733px;
     }
     .figure{
     width: 160px;
@@ -954,6 +966,9 @@ display: block;
     .item1 img, .item2 img, .item4 img, .item3 img, .item6 img, .item9 img, .item10 img, .item11 img{
       bottom: -728px;
     }
+    .item7 img, .item5 img{
+      bottom: -952px;
+    }
     .figure{
       width: 180px;
     }
@@ -1012,9 +1027,15 @@ display: block;
       width: 260px;
       height: 260px;
     }
-    .item1 img, .item2 img, .item4 img, .item3 img, .item6 img, .item9 img, .item10 img, .item11 img{
+    .item1 img, .item2 img, .item4 img,
+    .item3 img, .item6 img, .item9 img,
+    .item10 img, .item11 img{
       bottom: -860px;
     }
+    .item7 img, .item5 img{
+      bottom: -1131px;
+    }
+
   .hh1{
     font-size: 30px;
     margin: var(--mb-6);
@@ -1118,6 +1139,9 @@ display: block;
   .item11 img {
     bottom: -995px;
   }
+  .item7 img, .item5 img{
+    bottom: -1307px;
+  }
   /* === SERVICE === */
   .serviceflex{
     margin-right: 210px;
@@ -1186,9 +1210,15 @@ display: block;
   .bx-mouse{
     padding: 123px;
   }
-  .item1 img, .item2 img, .item3 img, .item4 img, .item6 img, .item9 img, .item10 img, .item11 img {
+  .item1 img, .item2 img, .item3 img,
+  .item4 img, .item6 img, .item9 img, .item10 img, .item11 img {
     bottom: -1130px;
 }
+  .item7 img, .item5 img, .item5 img{
+    
+    bottom: -1483px;
+
+  }
 
 }
   
