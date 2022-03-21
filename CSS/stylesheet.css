@@ -216,11 +216,10 @@ video {
 .mute__buttons button{
   background: none;
   border: none;
-  font-size: 35px;
   color: white;
 }
 .mute__buttons img{
-  width: 30%;
+  width: 20%;
 }
 .forside{
   display: flex;
@@ -422,6 +421,8 @@ form {
   margin: auto;
   border: none;
   font-family: futura-pt-condensed, sans-serif;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
   /* === OM OS === */
@@ -492,7 +493,6 @@ display: block;
 }
 
 .baggrundsbillede {
-  border-top: solid 5px #3E9CC1;;
   border-bottom: solid 5px #3E9CC1;
   width: 100%;
 }
@@ -911,6 +911,10 @@ display: block;
       font-size: 30px;
     }
 
+    .mute__buttons{
+      justify-content: flex-end;
+    }
+
   /* === KONTAKT OS SIDEN === */
   .kontakt h2 {
     text-align: center;
@@ -1295,7 +1299,6 @@ display: block;
   .forside img{
     margin: auto;
     display: flex;
-    margin-bottom: var(--mb-2);
   }
   /* === SERVICE === */
   .serviceflex{
