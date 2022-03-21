@@ -248,7 +248,6 @@ video {
   padding: 0;
 }
 .forside li{
-  color: white;
   font-size: 25px;
   font-family: futura-pt-condensed, sans-serif;
   font-weight: 700;
@@ -261,6 +260,7 @@ video {
 }
 .forside a{
   text-decoration: none;
+  color: white;
 }
 
 /* === ANIMATION FORSIDE === */
@@ -577,13 +577,14 @@ display: block;
     font-style: normal;
     color: var(--text-color);
     margin: var(--mb-3);
+    font-size: 18px;
    
   }
   .hh1{
     font-family: futura-pt-condensed, sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--text-color);
     margin: var(--mb-3);
   }
@@ -962,11 +963,11 @@ display: block;
 
     }
     .hh1{
-      font-size: 23px;
+      font-size: 25px;
       margin: var(--mb-5);
     }
     .pp{
-      font-size: 17px;
+  
       margin: var(--mb-5);
     }
     .item1, .item2, .item3, 
@@ -1071,7 +1072,7 @@ display: block;
       font-size: 25px;
     }
     .pp{
-      font-style: 20px;
+      font-size: 20px;
     }
   .item1, .item2,
   .item3, .item4, .item5,
@@ -1321,6 +1322,13 @@ display: block;
   }
 
   /* === PORTFOLIO === */
+
+  .hh1{
+    font-size: 35px;
+  }
+  .pp{
+    font-size: 35px;
+  }
   .item1, .item2, .item3, .item4, .item5, .item6, 
     .item7, .item8, .item9, .item10, .item11, .item12 {
       width: 340px;
