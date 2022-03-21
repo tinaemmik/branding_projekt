@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -126,7 +127,75 @@ footer h2{
   margin: 10px;
   font-size: 18px;
 }
+.sociale_medier ul {
+  display: flex;
+  justify-content: center;
+}
 
+.sociale_medier ul li {
+  list-style: none;
+}
+
+.sociale_medier ul li a {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 55px;
+  font-size: 25px;
+  margin: 0.5rem;
+  margin-top: 1rem;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.sociale_medier ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.sociale_medier ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.sociale_medier ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.sociale_medier ul li a:hover:before {
+  top: 0;
+}
+
+.sociale_medier ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+.sociale_medier ul li:nth-child(2) a:before{
+  background: #55acee;
+}
+
+.sociale_medier ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.sociale_medier ul li:nth-child(4) a:before {
+  background: #dd4b39;
+}
 /* === FORSIDE === */
 
 video {  
@@ -138,13 +207,21 @@ video {
   left: 0;
   z-index: -1;
 }
-video::-webkit-media-controls-timeline {
-  display: none;
+.mute__buttons{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 90px;
 }
-video::-webkit-media-controls-play-button {
-  display: none;
+.mute__buttons button{
+  background: none;
+  border: none;
+  font-size: 35px;
+  color: white;
 }
-
+.mute__buttons img{
+  width: 30%;
+}
 .forside{
   display: flex;
   flex-direction: column;
@@ -192,36 +269,37 @@ video::-webkit-media-controls-play-button {
   -moz-animation: fadein 2s; /* Firefox */
   -webkit-animation: fadein 2s; /* Safari and Chrome */
   -o-animation: fadein 2s; /* Opera */
+  text-align: center;
 }
 .forside img{
-  animation: fadein 30s;
- -moz-animation: fadein 30s; /* Firefox */
- -webkit-animation: fadein 30s; /* Safari and Chrome */
- -o-animation: fadein 30s; /* Opera */
+  animation: fadein 5s;
+ -moz-animation: fadein 5s; /* Firefox */
+ -webkit-animation: fadein 5s; /* Safari and Chrome */
+ -o-animation: fadein 5s; /* Opera */
 }
 .forside a:nth-of-type(1){  
- animation: fadein 5s;
--moz-animation: fadein 5s;
--webkit-animation: fadein 5s; 
--o-animation: fadein 5s;
+ animation: fadein 8s;
+-moz-animation: fadein 8s;
+-webkit-animation: fadein 8s; 
+-o-animation: fadein 8s;
 }
 .forside a:nth-of-type(2){  
-animation: fadein 7s;
--moz-animation: fadein 7s; 
--webkit-animation: fadein 7s; 
--o-animation: fadein 7s;
+animation: fadein 8s;
+-moz-animation: fadein 8s; 
+-webkit-animation: fadein 8s; 
+-o-animation: fadein 8s;
 }
 .forside a:nth-of-type(3){  
-animation: fadein 9s;
--moz-animation: fadein 9s; 
--webkit-animation: fadein 9s; 
--o-animation: fadein 9s;
+animation: fadein 8s;
+-moz-animation: fadein 8s; 
+-webkit-animation: fadein 8s; 
+-o-animation: fadein 8s;
 }
 .forside a:nth-of-type(4){  
-animation: fadein 11s;
--moz-animation: fadein 11s; 
--webkit-animation: fadein 11s; 
--o-animation: fadein 11s;
+animation: fadein 8s;
+-moz-animation: fadein 8s; 
+-webkit-animation: fadein 8s; 
+-o-animation: fadein 8s;
 }
 
 /* === KONTAKT OS ===*/
@@ -302,27 +380,36 @@ animation: fadein 11s;
 
 /* KONTAKT OS FORMULAR */
 form {
-  padding: 10px;
-  border-radius: 20px;
-  font-size: 18px;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .kontaktformular {
   border-radius: 10px;
-  width: 300px;
+  width: 290px;
   height: 30px;
   margin-left: auto;
   margin-right: auto;
   font-size: 18px;
   padding: 10px;
+  font-family: futura-pt-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
 }
 
 .textbox {
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 10px;
   left: 10px;
   margin-bottom: 10px;
+  font-family: futura-pt-condensed, sans-serif;
+  height: 230px;
+  width: 290px;
 }
 
 .sendbutton {
@@ -817,6 +904,12 @@ display: block;
       margin-top: 3rem;
       margin-bottom: 0;
     }
+    .forside h1{
+      text-align: start;
+      text-align: start;
+      margin-left: var(--mb-6);
+      font-size: 30px;
+    }
 
   /* === KONTAKT OS SIDEN === */
   .kontakt h2 {
@@ -1065,7 +1158,7 @@ display: block;
   /* === FOOTER ===*/
   .footer_design{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: center;
     margin: 8px 0;
   }
@@ -1076,6 +1169,11 @@ display: block;
     font-size: 30px;
     text-align: center;
   }
+  .sociale_medier ul li a{
+    width: 80px;
+    height: 80px;
+  }
+  
   /* === SERVICE SIDEN === */
   .serviceflex {
   margin-left: 200px;

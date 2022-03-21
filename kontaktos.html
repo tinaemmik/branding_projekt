@@ -50,17 +50,18 @@
                 </div>
 
                 <div class="kontaktformulardiv">
-
-                    <input class="kontaktformular" type="text" name="navn" placeholder="Navn"> <br>
-                    <input class="kontaktformular" type="number" name="tlfnr" placeholder="Telefon"> <br>
-                    <input class="kontaktformular" type="email" name="email" placeholder="E-mail">
-
                     <form>
+                        <input class="kontaktformular" type="text" name="navn" placeholder="Navn" required>
+                        <input class="kontaktformular" type="number" name="tlfnr" placeholder="Telefon" required>
+                        <input class="kontaktformular" type="email" name="email" placeholder="E-mail" required>
+
+
                         <textarea class="textbox" name="besked" rows="10" cols="25"
                             placeholder="Hvad kan vi hjælpe med?"></textarea>
-                    </form>
 
-                    <button class="sendbutton" type="submit">Send</button>
+
+                        <button class="sendbutton" type="submit">Send</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -91,9 +92,21 @@
                 <div class="sociale_medier">
 
                     <h2>SOCIALE MEDIER</h2>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f icon"></i> </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
+                        </li>
+                    </ul>
 
                 </div>
                 <div class="åbningstider">
