@@ -302,7 +302,7 @@ animation: fadein 8s;
 -o-animation: fadein 8s;
 }
 
-/* === KONTAKT OS ===*/
+/* === KONTAKT OS FOOTER ===*/
 .kontakt_os{
   text-align: right;
   margin-left: 60px ;
@@ -333,6 +333,163 @@ animation: fadein 8s;
   margin-bottom: 20px;
 }
 
+ /* === OM OS === */
+ .banner{
+  position:relative;
+  height: 198px;
+  max-width: 100%;
+  background-image: url(/img/omos_banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: none;
+  border-bottom:8px solid #3E9CC1 ;
+  margin-bottom: 30px;
+}
+.banner:hover{
+background-image:url(/gif/banner_gif.gif);
+background-size:cover;
+}
+.omos_btn{
+  position: absolute;
+  top: 90%;
+  right: 40%;
+ background-color: #3E9CC1;
+ border: 3px solid white;
+ border-radius: 25px;
+ color: #FFFFFF;
+ font-family: futura-pt-condensed, sans-serif;
+ font-weight: 400;
+ font-style: normal;
+ font-size: 21px;
+ text-align: center;
+ padding: 7px;
+}
+
+.om_os{
+color: #FFFFFF;
+font-family: futura-pt-condensed, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 20px;
+text-align: center;
+margin: 20px;
+}
+/*taget inspiration fra: CodePen Home Responsive pure CSS tabs & accordion By mikestreety*/
+/*https://codepen.io/mikestreety/pen/yVNNNm*/
+
+.beskrivelse_omos {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+.beskrivelse_omos .beskrivelse_omos2 {
+order: initial;
+display: none;
+padding: 20px;
+background: #3B3B3B;
+color: white;
+width: 70%;
+}
+
+.beskrivelse_omos2 h3{
+font-family: futura-pt-condensed, sans-serif;
+font-weight: 400;
+font-style: normal;
+text-align: center;
+font-size: 30px;
+}
+.beskrivelse_omos2 img{
+max-width: 100%;
+height: 250px;
+margin-right: 0;
+margin-left: 59px;
+}
+
+.beskrivelse_omos2 p{
+max-width: 380px;
+font-size: 21px;
+font-family: futura-pt-condensed, sans-serif;
+font-weight: 400;
+font-style: normal;
+text-align: left;
+position: relative;
+float: center;
+margin-right: 0;
+}
+
+.beskrivelse_omos label {
+order: initial;
+display: block; 
+background: #3B3B3B;
+margin: 20px;
+width: 261px;
+height: 216px;
+}
+.beskrivelse_omos label:first-of-type{
+background-image: url(/img/emil-ikon.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+}
+
+.beskrivelse_omos label:nth-of-type(2){
+background-image: url(/img/tina-ikon.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+}
+.beskrivelse_omos label:nth-of-type(3){
+background-image: url(/img/alex-ikon.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+}
+.beskrivelse_omos label:last-of-type{
+background-image: url(/img/simone-ikon.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+}
+
+.beskrivelse_omos label:first-of-type:hover{
+background-image: url(/gif/emil_gif.gif);
+background-size: cover;
+cursor:pointer;
+}
+.beskrivelse_omos label:nth-of-type(2):hover{
+background-image: url(/gif/tina_gif.gif);
+background-size: cover;
+cursor:pointer;
+}
+.beskrivelse_omos label:nth-of-type(3):hover{
+background-image: url(/gif/alex_gif.gif);
+background-size: cover;
+cursor:pointer;
+}
+.beskrivelse_omos label:last-of-type:hover{
+background-image: url(/gif/simone_gif.gif);
+background-size: cover;
+cursor:pointer;
+}
+
+.beskrivelse_omos .beskrivelse_omos2 {
+order: initial;
+display: none;
+padding: 20px;
+background: #3B3B3B;
+color: white;
+width: 70%;
+}
+
+.beskrivelse_omos input {
+display: none;
+}
+
+.beskrivelse_omos input:checked + label + .beskrivelse_omos2 {
+display: block;
+}
 
 /* === KONTAKT OS === */
 
@@ -426,68 +583,7 @@ form {
   margin-top: 1rem;
 }
 
-  /* === OM OS === */
-.banner_omos{
-  object-fit: cover;
-  object-position: bottom;
-  width: 100%;
-  border-bottom: 8px solid #3E9CC1;
-}
-.om_os{
-  color: #FFFFFF;
-  font-family: futura-pt-condensed, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  text-align: center;
-}
-.beskrivelse_omos div img{
-  max-width: 230px;
-}
-
-label img{
-  width: 100%;
-  height: 197px;
-}
-
-.beskrivelse_omos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-}
-
-.beskrivelse_omos label {
-  order: initial;
-  display: block; 
-  background: #3B3B3B;
-  margin: 20px;
-  padding: 30px;
-
-}
-
-.beskrivelse_omos .beskrivelse_omos2 {
-  order: initial;
-  display: none;
-  padding: 20px;
-  background: #3B3B3B;
-  color: white;
-  width: 100%;
-}
-
-.beskrivelse_omos input {
-display: none;
-}
-
-.beskrivelse_omos input:checked + label {
-background: #3E9CC1;
-}
-
-.beskrivelse_omos input:checked + label + .beskrivelse_omos2 {
-display: block;
-}
-
-/* SERVICE */
+/*==SERVICE==*/
 
 .servicebody {
   background-color: #272727;
@@ -839,6 +935,33 @@ display: block;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    /*==OM OS==*/
+    .banner{
+      height: 280px;
+      margin-bottom: 40px;
+    }
+    .omos_btn{
+      top: 90%;
+      right: 40%;
+      font-size: 27px;
+      padding: 10px;
+    }
+    .beskrivelse_omos2 h3{
+      font-size: 40px;
+    }
+    .beskrivelse_omos2 img{
+      height: 289px;
+      align-items: left;
+      margin-right: 0;
+      margin-left: 100px;
+    }
+    .beskrivelse_omos2 p{
+      font-size: 30px;
+      text-align: left;
+      float:right;
+      margin-right:0px;
+    }
+
     /* === KONTAKT OS SIDEN === */
     .service .serviceholder {
       max-width: 33%;
@@ -929,7 +1052,36 @@ display: block;
     .mute__button{
       justify-content: flex-end;
     }
-
+   /*==OM OS==*/
+   .om_os{
+    font-size: 30px;
+  }
+   .banner{
+    height: 410px;
+    margin-bottom: 40px;
+  }
+  .omos_btn{
+    top: 92%;
+    right: 43%;
+    font-size: 33px;
+    padding: 10px;
+  }
+  .beskrivelse_omos2 h3{
+    font-size: 40px;
+  }
+  .beskrivelse_omos2 img{
+    height: 289px;
+    align-items: left;
+    margin-right: 0;
+    margin-left: 90px;
+  }
+  .beskrivelse_omos2 p{
+    font-size: 25px;
+    text-align: left;
+    float:right;
+    margin-right:0px;
+  }
+  
   /* === KONTAKT OS SIDEN === */
   .kontakt h2 {
     text-align: center;
@@ -1035,7 +1187,35 @@ display: block;
     font-size: 45px;
     margin-right: var(--mb-4);
   }
-
+    /*==OM OS==*/
+  .om_os{
+    font-size: 30px;
+  }
+  .banner{
+    height: 465px;
+    margin-bottom: 40px;
+  }
+  .omos_btn{
+    top: 92%;
+    right: 43%;
+    font-size: 36px;
+    padding: 10px;
+  }
+  .beskrivelse_omos2 h3{
+    font-size: 40px;
+  }
+  .beskrivelse_omos2 img{
+    height: 289px;
+    align-items: left;
+    margin-right: 0;
+    margin-left: 70px;
+  }
+  .beskrivelse_omos2 p{
+    font-size: 28px;
+    text-align: left;
+    float:right;
+    margin-right:20px;
+  }
   /* === SERVICE SIDEN === */
     .serviceflex {
     margin-left: 80px;
@@ -1112,9 +1292,45 @@ display: block;
   /* === Extra large devices 1200+ === */
   @media only screen and (min-width: 1200px){
   /* === FORSIDE === */
+ /*==OM OS==*/
+ .om_os{
+  font-size: 30px;
+  margin: 20px;
+}
+.beskrivelse_omos label {
+  order: 1;
 
-   /* === KONTAKT OS SIDEN === */
-   .kontakt h2 {
+}
+.beskrivelse_omos .beskrivelse_omos2 {
+  order: 99; 
+}
+.banner{
+  height: 585px;
+  margin-bottom: 70px;
+}
+.omos_btn{
+  top: 93%;
+  right: 45%;
+  font-size: 42px;
+  padding: 10px;
+}
+.beskrivelse_omos2 h3{
+  font-size: 40px;
+  }
+.beskrivelse_omos2 img{
+  height: 289px;
+  align-items: left;
+  margin-right: 0;
+  margin-left: 100px;
+}
+.beskrivelse_omos2 p{
+  font-size: 30px;
+  text-align: left;
+  float: right;
+  margin-right: 230px;
+}
+/* === KONTAKT OS SIDEN === */
+.kontakt h2 {
     text-align: center;
     font-size: 70px;
 }
@@ -1230,18 +1446,6 @@ display: block;
   }
   .info_kontaktos li{
     font-size: 25px;
-  }
-  /*om os*/
-  .om_os{
-    font-size: 30px;
-    margin: 20px;
-  }
-  .beskrivelse_omos label {
-    order: 1;
-  
-  }
-  .beskrivelse_omos .beskrivelse_omos2 {
-    order: 99; 
   }
 }
 
