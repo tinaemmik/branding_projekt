@@ -228,7 +228,7 @@ video {
 }
 
 .forside img{
-  max-width: 80%;
+  max-width: 60%;
   margin: auto;
 }
 .forside h1{
@@ -238,7 +238,6 @@ video {
   font-style: normal;
   color: white;
   letter-spacing: 1px;
-  margin-top: var(--mb-3);
   margin-left: var(--mb-2);
   margin-bottom: var(--mb-3);
 }
@@ -927,10 +926,6 @@ form {
 
   @media only screen and (min-width: 576px){
     /* === FORSIDE === */
-    .forside img{
-      margin-top: 5rem;
-      margin-bottom: 4rem;
-    }
     .forside ul{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1038,10 +1033,7 @@ form {
    
     /* === FORSIDE === */
     
-    .forside img{
-      margin-top: 3rem;
-      margin-bottom: 0;
-    }
+   
     .forside h1{
       text-align: start;
       text-align: start;
@@ -1174,10 +1166,7 @@ form {
 
   /* === Large devices 992+ === */
   @media only screen and (min-width: 992px){
-    /* === FORSIDE === */
-    .forside img{
-      margin-top: 0;
-    }
+
    
   /* === HEADER === */
   .logo{
