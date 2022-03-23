@@ -346,7 +346,7 @@ animation: fadein 8s;
   margin-bottom: 30px;
 }
 .banner:hover{
-background-image:url(/gif/banner_gif.gif);
+background-image:url(/img/banner_gif.gif);
 background-size:cover;
 }
 .omos_btn{
