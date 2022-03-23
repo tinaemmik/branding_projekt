@@ -611,6 +611,8 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .service .serviceholder {
@@ -1205,11 +1207,6 @@ form {
     float:right;
     margin-right:20px;
   }
-  /* === SERVICE SIDEN === */
-    .serviceflex {
-    margin-left: 80px;
-    margin-right: 80px;
-    }
     
 /* === KONTAKT OS SIDEN === */
 .kontakt h2 {
@@ -1398,11 +1395,7 @@ form {
     height: 80px;
   }
   
-  /* === SERVICE SIDEN === */
-  .serviceflex {
-  margin-left: 200px;
-  margin-right: 200px;
-  }
+ 
   /* === KONTAKT OS ===*/
 
   .kontakt_os p{
@@ -1459,12 +1452,12 @@ form {
   .item7 img, .item5 img{
     bottom: -1307px;
   }
-  /* === SERVICE === */
-  .serviceflex{
-    margin-right: 210px;
-    margin-left: 210px;
-  }
+  /* === OM OS === */
+.banner{
+  height: 638px;
 }
+}
+
 @media only screen and (min-width: 1600px){
 
   /* === FORSIDE === */
@@ -1508,12 +1501,6 @@ form {
     margin: auto;
     display: flex;
   }
-  /* === SERVICE === */
-  .serviceflex{
-    margin-left: 500px;
-    margin-right: 500px;
-  }
-
   /* === PORTFOLIO === */
 
   .hh1{
@@ -1542,6 +1529,10 @@ form {
     bottom: -1483px;
 
   }
+    /* === OM OS === */
+.banner{
+  height: 708px;
+}
 
 }
   
