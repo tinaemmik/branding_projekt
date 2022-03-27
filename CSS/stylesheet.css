@@ -1238,7 +1238,7 @@ form {
       font-size: 25px;
     }
     .pp{
-      font-size: 20px;
+      font-size: 18px;
     }
   .item1, .item2,
   .item3, .item4, .item5,
@@ -1362,7 +1362,7 @@ form {
     margin: var(--mb-6);
   }
   .pp{
-    font-size: 25px;
+    font-size: 18px;
     line-height: 1.5;
   }
   .figure{
@@ -1507,7 +1507,7 @@ form {
     font-size: 35px;
   }
   .pp{
-    font-size: 35px;
+    font-size: 18px;
   }
   .item1, .item2, .item3, .item4, .item5, .item6, 
     .item7, .item8, .item9, .item10, .item11, .item12 {
